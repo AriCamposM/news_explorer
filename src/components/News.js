@@ -7,18 +7,15 @@ function News({ news }) {
 
   React.useEffect(() => {
     setVisibleCount(3);
-  },[news]);
+  }, [news]);
 
   // Función para cargar más artículos
   const handleLoadMore = () => {
-    setVisibleCount(prevCount => prevCount + 3);
+    setVisibleCount((prevCount) => prevCount + 3);
   };
-
 
   // Artículos actualmente visibles
   const visibleNews = news.slice(0, visibleCount);
-
-
 
   return (
     <>
