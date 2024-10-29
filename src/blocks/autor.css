@@ -1,0 +1,128 @@
+.author{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.author__image{
+    border-radius: 1000px;
+    margin-right: 56px;
+}
+
+.author__titles{
+    width: 600px;
+}
+
+.author__title{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.author__paragrap{
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 550px;
+}
+
+.author__paragrap-two{
+  color: black;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 550px;
+}
+
+.author__span{
+    display: block;
+}
+
+@media screen and (max-width:768px){
+
+    .author__title{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0px;
+    }
+
+    .author{
+        margin: 0px;
+        margin-top: 40px;
+        margin-bottom: 61px;
+
+    }
+
+    .author__image{
+        margin: 0px;
+        width: 232px;
+        height: 232px;
+        margin-left: 40px;
+        margin-right: 32px;
+    }
+
+    .author__paragrap{
+      font-size: 18px;
+      line-height: 24px;
+      width: 424px;
+  }
+
+  .author__paragrap-two{
+    font-size: 18px;
+    line-height: 24px;
+    width: 424px;
+  }
+
+}
+
+@media screen and (max-width:320px){
+  .author{
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 104px;
+  }
+
+  .author__image{
+    width: 272px;
+    height: 272px;
+    margin: 0px auto;
+  }
+
+  .author__titles{
+    width: 320px;
+    margin: 0px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+  }
+
+  .author__title{
+    margin: 0px auto;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .author__paragrap{
+    margin: 0px;
+    width: 288px;
+    margin: 0px auto;
+    margin-bottom: 28px;
+  }
+
+  .author__paragrap-two{
+    margin: 0px auto;
+    width: 288px;
+  }
+
+
+}

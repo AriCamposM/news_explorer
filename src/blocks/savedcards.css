@@ -1,0 +1,37 @@
+.savedcards{
+  background-color: #F5F6F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.savedcards__container{
+  width: 1232px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  gap: 16px 16px;
+
+  margin-top: 60px;
+  margin-bottom: 62px;
+}
+
+@media screen and (max-width:768px) {
+  .savedcards__container{
+    width: 688px;
+    grid-template-columns: 224px 224px 224px;
+    justify-content: center;
+    gap: 8px 8px;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  .savedcards__container{
+    width: 288px;
+    grid-template-columns: 288px;
+    justify-content: center;
+    gap: 10px 0px;
+  }
+}

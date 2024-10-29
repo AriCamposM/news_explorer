@@ -1,0 +1,43 @@
+.noresults{
+  width: 100vw;
+  height: 374px;
+  background-color: #F5F6F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noresults__image{
+  width: 82.5px;
+  height: 82.5px;
+}
+
+.noresults__title{
+  margin: 0px;
+  margin-top: 31.5px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.noresults__paragraph{
+  margin: 0px;
+  margin-top: 16px;
+  width: 356px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+}
+
+@media screen and (max-width:320px){
+  .noresults__paragraph{
+    width: 288px;
+  }
+}

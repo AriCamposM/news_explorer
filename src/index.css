@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+@import url('./blocks/header.css');
+@import url('./blocks/autor.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/login.css');
+@import url('./blocks/signup.css');
+@import url('./blocks/successful.css');
+@import url('./blocks/news.css');
+@import url('./blocks/card.css');
+@import url('./blocks/preloader.css');
+@import url('./blocks/noresults.css');
+@import url('./blocks/savednews.css');
+@import url('./blocks/savedheader.css');
+@import url('./blocks/savedcards.css');

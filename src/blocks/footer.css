@@ -1,0 +1,176 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 26px;
+}
+
+.footer__watermark{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin: 0px;
+    margin-left: 104px;
+}
+
+.footer__container{
+    display: flex;
+}
+
+.footer__home{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.footer__practicum{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    margin-left: 43px;
+}
+
+.footer__facebook{
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 106px;
+}
+
+.footer__github{
+    width: 24px;
+    height: 24px;
+    margin-left: 40px;
+}
+
+.footer__container-mobile{
+  display: none;
+}
+
+
+@media screen and (max-width:768px){
+
+  .footer{
+    padding-top: 24px;
+    padding-bottom: 18px;
+}
+
+  .footer__watermark{
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 40px;
+  }
+
+  .footer__home{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .footer__practicum{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    margin-left: 43px;
+  }
+
+  .footer__facebook{
+    margin: 0px;
+    margin-right: 40px;
+    margin-left: 24px;
+  }
+
+  .footer__github{
+    margin: 0px;
+    margin-left: 40px;
+  }
+
+}
+
+@media screen and (max-width:320px){
+
+  .footer{
+    width: 320px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .footer__watermark{
+    display: none;
+  }
+
+  .footer__container{
+    display: none;
+  }
+
+  .footer__container-mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+
+  .footer__home-container-mobile{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .footer__logos-container-mobile{
+
+  }
+
+  .footer__watermark-mobile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin: 0px;
+    margin-top: 38px;
+}
+
+.footer__home-mobile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.footer__practicum-mobile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.footer__facebook-mobile{
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.footer__github-mobile{
+    width: 24px;
+    height: 24px;
+}
+
+
+}
+

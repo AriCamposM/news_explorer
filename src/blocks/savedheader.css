@@ -1,0 +1,248 @@
+
+
+.savedheader__bar{
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  align-items: center;
+
+}
+
+.savedheader__nav{
+  display: flex;
+}
+
+.savedheader__logo{
+  margin: 0px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 104px;
+}
+
+
+.savedheader__home{
+  margin: 0px;
+  margin-top: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 23px;
+  border-bottom: 2px solid #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.savedheader__button{
+  margin-top: 16px;
+  color: #000;
+  background-color: transparent;
+  border-radius: 100px;
+  width: 176px;
+  height: 48px;
+  border: 1px solid #000;
+  margin-left: 45px;
+  margin-right: 104px;
+  cursor: pointer;
+}
+
+.savedheader__background{
+  background-image: none;
+  background-color: #ebebeb;
+}
+
+.savedheader__menu-open{
+  background-color: #ebebeb;
+  width: 320px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.savedheader__menu-paragraph{
+  margin: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 56px;
+  color: #000;
+  width: 288px;
+
+}
+
+.savedheader__menu-button{
+  color: #000;
+  background-color: transparent;
+  width: 288px;
+  height: 55px;
+  border: 1px solid #000;
+  border-radius: 1000px;
+  margin-bottom: 28px;
+}
+
+.savedheader__menu{
+  display: none;
+}
+
+.savedheader__menu-open{
+  display: none;
+}
+
+/*Articulos guardados texto*/
+
+.savedheader__info{
+  width: 1232px;
+  margin: 0px auto;
+}
+
+.savedheader__articles-saved{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0px;
+  margin-top: 40px;
+  color: rgba(26, 27, 34, 0.5);
+}
+
+.savedheader__articles-text{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  margin: 0px;
+  margin-top: 28px;
+  width: 530px;
+  height: 92px;
+}
+
+.savedheader__keywords{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+.savedheader__span{
+
+}
+
+@media screen and (max-width:768px){
+  .savedheader__logo{
+      padding-left: 40px;
+  }
+
+  .savedheader__button{
+      margin: 0px;
+      margin-top: 16px;
+      margin-right: 40px;
+      margin-left: 16px;
+
+  }
+
+  .savedheader__info{
+    width: 712px;
+    margin: 0px auto;
+  }
+
+  .savedheader__articles-saved{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  .savedheader__articles-text{
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 16px;
+    width: 336px;
+    height: 68px;
+  }
+
+
+  .savedheader__keywords{
+    margin: 0px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+
+}
+
+
+@media screen and (max-width:320px){
+
+  .savedheader__home{
+    display: none;
+  }
+
+  .savedheader__button{
+    display: none;
+  }
+
+  .savedheader__logo{
+      padding: 16px 0px 16px 16px;
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .savedheader__button{
+      margin: 0px;
+      margin-top: 16px;
+      margin-right: 40px;
+      margin-left: 16px;
+
+  }
+
+  .savedheader__menu{
+    display: flex;
+    margin-right: 16px;
+  }
+
+  .savedheader__info{
+    width: 288px;
+    margin: 0px auto;
+  }
+
+  .savedheader__articles-saved{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+
+  .savedheader__articles-text{
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 16px;
+    width: 288px;
+    height: 68px;
+  }
+
+
+  .savedheader__keywords{
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 32px;
+    width: 288px;
+  }
+
+  .savedheader__menu-open{
+    display: flex;
+  }
+}
+
