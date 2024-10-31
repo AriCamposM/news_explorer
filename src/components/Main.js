@@ -28,13 +28,19 @@ function Main ({
   handleLogOut,
   handleSaveArticleClick,
   handleHomeClick,
-  handleSavedArticlesClick }) {
+  handleSavedArticlesClick}) {
 
 
     return (
         <>
 
-            <Header handleSearchNews={handleSearchNews} handleLogInPopup={handleLogInPopup} handleLogOut={handleLogOut} handleHomeClick={handleHomeClick} handleSavedArticlesClick={handleSavedArticlesClick}/>
+            <Header
+            handleSearchNews={handleSearchNews}
+            handleLogInPopup={handleLogInPopup}
+            handleLogOut={handleLogOut}
+            handleHomeClick={handleHomeClick}
+            handleSavedArticlesClick={handleSavedArticlesClick}
+            />
 
             {news ? <News news={news} handleSaveArticleClick={handleSaveArticleClick}/> : ''}
 
@@ -45,7 +51,7 @@ function Main ({
 
             <Author/>
 
-            <Footer/>
+            <Footer handleHomeClick={handleHomeClick}/>
 
 
 

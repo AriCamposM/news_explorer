@@ -10,8 +10,16 @@ import es from 'date-fns/locale/es';
 function Card({ article, keyword, source, title, publishedAt, description, urlToImage, url, newsPage, favoritePage, handleSaveArticleClick, handleUnSaveArticle }) {
   const CurrentUserState = React.useContext(CurrentUserStateContext);
 
-  //Formatear fecha
-  const formattedDate = format(new Date(publishedAt), "dd 'de' MMMM 'de' yyyy", { locale: es });
+  // Function to validate the date
+  const isValidDate = (date) => {
+    return date instanceof Date && !isNaN(date);
+  };
+
+  // Formatear fecha
+  const date = new Date(publishedAt);
+  const formattedDate = isValidDate(date)
+    ? format(date, "dd 'de' MMMM 'de' yyyy", { locale: es })
+    : "Fecha no válida";
 
   // Estado local para manejar si el cursor está sobre el icono de favorito
   const [isHovering, setIsHovering] = useState(false);
@@ -32,6 +40,9 @@ function Card({ article, keyword, source, title, publishedAt, description, urlTo
     }
   }
 
+  React.useEffect(() =>{
+    setIsFavorite(false)
+  },[article])
 
   return (
     <>

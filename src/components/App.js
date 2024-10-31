@@ -65,7 +65,6 @@ function App() {
 
     if (localStorage.getItem("news")) {
       const articlesLocal = JSON.parse(localStorage.getItem("news"));
-      console.log(articlesLocal);
       setNews(articlesLocal);
     }
 
@@ -81,6 +80,8 @@ function App() {
     }
 
   }, [token])
+
+
 
 //Función que maneja los inicios de sesión
   const handleSignIn = (password, email) => {
@@ -158,6 +159,8 @@ function App() {
         console.error('Error al guardar el artículo');
       } else {
         console.log('Artículo guardado:', savedArticle);
+
+        setSavedNews((prevSavedNews) => [...prevSavedNews, savedArticle]);
       }
     })
     .catch((err) => console.error(`Error al guardar el artículo: ${err}`));
@@ -211,6 +214,8 @@ function App() {
           setNoResults(false);
           // Guardar solo los artículos en `localStorage`
           localStorage.setItem("news", JSON.stringify(updatedArticles));
+          console.log(keyword);
+          localStorage.setItem("keyword", JSON.stringify(keyword));
         } else {
           setIsPreloading(false);
           setNoResults(true);

@@ -19,7 +19,7 @@ function SavedNews ( { handleLogOut ,savedNews, handleUnSaveArticle, handleHomeC
           handleUnSaveArticle={handleUnSaveArticle}
           />
 
-          <Footer/>
+          <Footer handleHomeClick={handleHomeClick}/>
       </div>
     </>
   )

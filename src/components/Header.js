@@ -13,6 +13,12 @@ function Header ( { handleSearchNews, handleLogInPopup ,handleLogOut, handleHome
     handleSearchNews(keyword);
   }
 
+  React.useEffect(() => {
+    const storedKeyword = JSON.parse(localStorage.getItem('keyword'));
+    if (storedKeyword) {
+      setKeyword(storedKeyword);
+    }
+  }, []);
 
 
 
@@ -20,7 +26,12 @@ function Header ( { handleSearchNews, handleLogInPopup ,handleLogOut, handleHome
     <>
     <div className="header">
 
-              <HeaderNav handleLogInPopup={handleLogInPopup} handleLogOut={handleLogOut} handleHomeClick={handleHomeClick} handleSavedArticlesClick={handleSavedArticlesClick}/>
+              <HeaderNav
+              handleLogInPopup={handleLogInPopup}
+              handleLogOut={handleLogOut}
+              handleHomeClick={handleHomeClick}
+              handleSavedArticlesClick={handleSavedArticlesClick}
+              />
 
                 <div className="header__titles">
                     <h2 className="header__title">¿Qué está pasando <span className="header__span">en el mundo?</span></h2>
@@ -38,7 +49,6 @@ function Header ( { handleSearchNews, handleLogInPopup ,handleLogOut, handleHome
                         maxLength="30"
                         value={keyword}
                         onChange={handleKeyword}
-                        required
                         />
                         <button
                         type="submit"

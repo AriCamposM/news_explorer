@@ -30,8 +30,6 @@ function SavedHeader ( { handleLogOut,
   }
 
 
-  console.log(savedNews)
-
   // Contar palabras clave
   const keywordCounts = {};
 
