@@ -11,6 +11,16 @@
   display: flex;
 }
 
+.signup__error{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  width: 358px;
+  color: #FF0000;
+}
+
 .signup__opened {
   display: flex;
 }
@@ -80,8 +90,6 @@
   line-height: 17px;
 
   width: 358px;
-
-  margin-bottom: 31px;
 }
 
 .signup__input-email::placeholder{
@@ -98,6 +106,8 @@
 
   width: 358px;
 
+  margin-top: 31px;
+
   margin-bottom: 5px;
 }
 
@@ -113,8 +123,6 @@
   line-height: 17px;
 
   width: 358px;
-
-  margin-bottom: 31px;
 }
 
 .signup__label-user{
@@ -127,6 +135,7 @@
 
   width: 358px;
 
+  margin-top: 31px;
   margin-bottom: 5px;
 }
 
@@ -142,8 +151,6 @@
   line-height: 17px;
 
   width: 358px;
-
-  margin-bottom: 39px;
 }
 
 .signup__button{
@@ -154,6 +161,7 @@
   border-radius: 1000px;
   border: #2F71E5;
 
+  margin-top: 39px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -162,6 +170,18 @@
   line-height: 24px;
 
   cursor: pointer;
+}
+
+.signup__button:disabled {
+  background-color: #D1D2D6;
+  color: #B6BCBF;
+  cursor: not-allowed;
+}
+
+.signup__button:disabled:hover {
+  background-color: #D1D2D6;
+  color: #B6BCBF;
+  cursor: not-allowed;
 }
 
 
@@ -227,30 +247,29 @@
 
   .signup__input-email{
     width: 288px;
-    margin-bottom: 30px;
   }
 
   .signup__label-password{
     width: 288px;
+    margin-top: 30px;
   }
 
   .signup__input-password{
     width: 288px;
-    margin-bottom: 30px;
   }
 
   .signup__label-user{
     width: 288px;
+    margin-top: 30px;
   }
 
   .signup__input-user{
     width: 288px;
-    margin-bottom: 23px;
   }
 
   .signup__button{
     width: 288px;
-
+    margin-top: 23px;
   }
 
   .signup__footer{
@@ -265,5 +284,9 @@
     width: 24px;
     height: 24px;
     top: -40px;
+  }
+
+  .signup__error{
+    width: 288px;
   }
 }

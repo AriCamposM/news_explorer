@@ -48,6 +48,22 @@
     cursor: pointer;
 }
 
+.header__save{
+  margin: 0px;
+  margin-top: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 23px;
+
+  padding-left: 36px;
+  padding-right: 10px;
+  cursor: pointer;
+  opacity: .5;
+}
+
 .header__button{
     margin-top: 16px;
     color: #fff;
@@ -64,6 +80,23 @@
 .header__button:hover{
   opacity: 0.8;
 }
+
+
+.header__button-user{
+  margin-top: 16px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 100px;
+    width: 112px;
+    height: 48px;
+    border: 1px solid #fff;
+    margin-left: 16px;
+    margin-right: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .header__titles{
     margin: 0px auto;
@@ -143,6 +176,12 @@
 
 }
 
+.header__search-button:disabled{
+  background-color: #D1D2D6;
+  cursor: not-allowed;
+  color: #B6BCBF;
+}
+
 .header__search-button:hover{
   background-color: #347EFF;
   cursor: pointer;
@@ -196,6 +235,17 @@
 
 }
 
+.header__menu-save{
+  margin: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 56px;
+  color: #fff;
+  width: 288px;
+}
+
 .header__menu-button{
   color: #fff;
   background-color: transparent;
@@ -204,6 +254,24 @@
   border: 1px solid #fff;
   border-radius: 1000px;
   margin-bottom: 28px;
+}
+
+.header__menu-user{
+  color: #fff;
+  background-color: transparent;
+  width: 288px;
+  height: 55px;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logout-icon{
+  padding-left: 14px;
+  cursor: pointer;
 }
 
 .header__menu-open{
@@ -226,6 +294,13 @@
         margin-right: 40px;
         margin-left: 16px;
 
+    }
+
+    .header__button-user{
+      margin: 0px;
+      margin-top: 16px;
+      margin-right: 40px;
+      margin-left: 16px;
     }
 
     .header__title{
@@ -274,7 +349,15 @@
     display: none;
   }
 
+  .header__save{
+    display: none;
+  }
+
   .header__button{
+    display: none;
+  }
+
+  .header__button-user{
     display: none;
   }
 
@@ -287,14 +370,6 @@
     .header{
         height: auto;
         background-size: cover;
-    }
-
-    .header__button{
-        margin: 0px;
-        margin-top: 16px;
-        margin-right: 40px;
-        margin-left: 16px;
-
     }
 
     .header__titles{

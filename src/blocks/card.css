@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+.card__ref:hover{
+  opacity: .7;
+}
+
 .card__container{
   position: relative;
 
@@ -51,6 +55,15 @@
 
 .card__bookmark:hover{
   opacity: 1;
+}
+
+.card__bookmark-favorite{
+  width: 24px;
+  height: 24px;
+}
+
+.card__bookmark-favorite:hover{
+  opacity: .9;
 }
 
 
@@ -97,8 +110,6 @@
 
   cursor: pointer;
 
-  display: none;
-
 }
 
 .card__topic-text{
@@ -128,7 +139,6 @@
 
   cursor: pointer;
 
-  display: none;
 }
 
 .card__trash-icon{

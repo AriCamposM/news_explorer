@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-function News({ news }) {
+function News({ news, handleSaveArticleClick }) {
   // Estado para llevar el conteo de artículos visibles
   const [visibleCount, setVisibleCount] = React.useState(3);
 
@@ -25,6 +25,8 @@ function News({ news }) {
         <div className="news__container">
           {visibleNews.map((article, index) => (
             <Card
+              article={article}
+              keyword={article.keyword}
               key={index}
               source={article.source.name}
               title={article.title}
@@ -33,6 +35,8 @@ function News({ news }) {
               urlToImage={article.urlToImage}
               url={article.url}
               newsPage={true}
+              favoritePage={false}
+              handleSaveArticleClick={handleSaveArticleClick}
             />
           ))}
         </div>

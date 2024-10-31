@@ -11,6 +11,16 @@
   display: flex;
 }
 
+.login__error{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  width: 358px;
+  color: #FF0000;
+}
+
 .login__opened {
   display: flex;
 }
@@ -80,8 +90,6 @@
   line-height: 17px;
 
   width: 358px;
-
-  margin-bottom: 31px;
 }
 
 .login__input-email::placeholder{
@@ -99,6 +107,7 @@
   width: 358px;
 
   margin-bottom: 5px;
+  margin-top: 31px;
 }
 
 .login__input-password{
@@ -113,8 +122,6 @@
   line-height: 17px;
 
   width: 358px;
-
-  margin-bottom: 39px;
 }
 
 .login__button{
@@ -125,6 +132,7 @@
   border-radius: 1000px;
   border: #2F71E5;
 
+  margin-top: 39px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -133,6 +141,18 @@
   line-height: 24px;
 
   cursor: pointer;
+}
+
+.login__button:disabled {
+  background-color: #D1D2D6;
+  color: #B6BCBF;
+  cursor: not-allowed;
+}
+
+.login__button:disabled:hover {
+  background-color: #D1D2D6;
+  color: #B6BCBF;
+  cursor: not-allowed;
 }
 
 .login__button:hover{
@@ -197,21 +217,20 @@
 
   .login__input-email{
     width: 288px;
-    margin-bottom: 30px;
   }
 
   .login__label-password{
     width: 288px;
+    margin-top: 30px;
   }
 
   .login__input-password{
     width: 288px;
-    margin-bottom: 23px;
   }
 
   .login__button{
     width: 288px;
-
+    margin-top: 23px;
   }
 
   .login__footer{
@@ -226,5 +245,9 @@
     width: 24px;
     height: 24px;
     top: -40px;
+  }
+
+  .login__error{
+    width: 288px;
   }
 }

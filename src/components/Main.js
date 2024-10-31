@@ -20,15 +20,23 @@ function Main ({
   isLogInOpen,
   handleSignUpPopup,
   isSignUpOpen,
-  handleRedirectPopups }) {
+  handleRedirectPopups,
+  handleSignUp,
+  isSuccessfulOpen,
+  onClose,
+  handleSignIn,
+  handleLogOut,
+  handleSaveArticleClick,
+  handleHomeClick,
+  handleSavedArticlesClick }) {
 
 
     return (
         <>
 
-            <Header handleSearchNews={handleSearchNews} handleLogInPopup={handleLogInPopup}  />
+            <Header handleSearchNews={handleSearchNews} handleLogInPopup={handleLogInPopup} handleLogOut={handleLogOut} handleHomeClick={handleHomeClick} handleSavedArticlesClick={handleSavedArticlesClick}/>
 
-            {news ? <News news={news}/> : ''}
+            {news ? <News news={news} handleSaveArticleClick={handleSaveArticleClick}/> : ''}
 
 
             { isPreloading ? <Preloader/> : ''}
@@ -39,14 +47,14 @@ function Main ({
 
             <Footer/>
 
-            
-
-            {isLogInOpen ? <Login handleLogInPopup={handleLogInPopup} handleRedirectPopups={handleRedirectPopups} /> : "" }
 
 
-            { isSignUpOpen ? <Signup handleSignUpPopup={handleSignUpPopup} handleRedirectPopups={handleRedirectPopups} /> : " "}
+            {isLogInOpen ? <Login handleLogInPopup={handleLogInPopup} handleRedirectPopups={handleRedirectPopups} handleSignIn={handleSignIn} /> : "" }
 
-            {/* <Successful/> */}
+
+            { isSignUpOpen ? <Signup handleSignUpPopup={handleSignUpPopup} handleRedirectPopups={handleRedirectPopups} handleSignUp={handleSignUp} /> : " "}
+
+            { isSuccessfulOpen ? <Successful onClose={onClose} handleLogInPopup={handleLogInPopup}  /> : "" }
 
 
 
