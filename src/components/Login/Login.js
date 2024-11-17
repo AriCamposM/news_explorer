@@ -1,5 +1,8 @@
 import React from "react";
-import CloseIcon from '../Images/login__close.png'
+import CloseIcon from '../../Images/login__close.png'
+
+import './login.css';
+
 function Login ({handleLogInPopup, handleRedirectPopups, handleSignIn}) {
 
   // Estados para cada input

@@ -1,5 +1,7 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
+
+import './news.css';
 
 function News({ news, handleSaveArticleClick }) {
   // Estado para llevar el conteo de artículos visibles

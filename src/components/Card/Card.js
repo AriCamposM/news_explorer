@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import Bookmark from '../Images/card__bookmark-active.png';
-import TrashIcon from '../Images/card__trash.png';
-import { CurrentUserStateContext } from "../contexts/CurrentUserState";
-import BookmarkActive from '../Images/card__bookmark-true.png';
-import imageNotFound from '../Images/404__image.jpg';
+import Bookmark from '../../Images/card__bookmark-active.png';
+import TrashIcon from '../../Images/card__trash.png';
+import { CurrentUserStateContext } from "../../contexts/CurrentUserState";
+import BookmarkActive from '../../Images/card__bookmark-true.png';
+import imageNotFound from '../../Images/404__image.jpg';
 import { format } from 'date-fns';
 import es from 'date-fns/locale/es';
+
+import './card.css';
 
 function Card({ article, keyword, source, title, publishedAt, description, urlToImage, url, newsPage, favoritePage, handleSaveArticleClick, handleUnSaveArticle }) {
   const CurrentUserState = React.useContext(CurrentUserStateContext);

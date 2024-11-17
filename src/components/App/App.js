@@ -1,16 +1,16 @@
 import React from "react";
-import Main from "./Main";
+import Main from "../Main/Main";
 
-import { CurrentUserStateContext } from "../contexts/CurrentUserState.js";
-import {UsernameContext} from "../contexts/UsernameContext.js"
+import { CurrentUserStateContext } from "../../contexts/CurrentUserState.js";
+import {UsernameContext} from "../../contexts/UsernameContext.js"
 
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute.js";
 
-import api from "../utils/Api.js";
-import * as MainApi from '../utils/MainApi.js';
+import api from "../../utils/Api.js";
+import * as MainApi from '../../utils/MainApi.js';
 
-import SavedNews from "./SavedNews.js";
+import SavedNews from "../SavedNews/SavedNews.js";
 
 function App() {
   const [news, setNews] = React.useState(null);
@@ -87,6 +87,7 @@ function App() {
   const handleSignIn = (password, email) => {
     MainApi.authorize(password,email)
     .then((data)=>{
+      console.log(data)
       if(data.token){
         setIsLoggedIn(true);
       }

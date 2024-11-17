@@ -1,5 +1,8 @@
 import React from "react";
-import IconNotFound from '../Images/not-found_v1.png';
+import IconNotFound from '../../Images/not-found_v1.png';
+
+import './noresults.css';
+
 function NoResults () {
 
   return(

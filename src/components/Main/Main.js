@@ -1,15 +1,15 @@
 import React from "react";
-import Author from "./Author";
-import Footer from "./Footer";
-import Header from "./Header";
+import Author from "../Author/Author";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
-import Login from "./Login";
-import Signup from "./Signup";
-import Successful from "./Successful";
-import News from "./News";
+import Login from "../Login/Login";
+import Signup from "../Signup/Signup";
+import Successful from "../Successful/Successful";
+import News from "../News/News";
 
-import Preloader from "./Preloader";
-import NoResults from "./NoResults";
+import Preloader from "../Preloader/Preloader";
+import NoResults from "../NoResults/NoResults";
 
 function Main ({
   news,

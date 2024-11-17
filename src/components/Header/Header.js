@@ -1,5 +1,8 @@
 import React from "react";
-import HeaderNav from "./HeaderNav";
+import HeaderNav from "../HeaderNav/HeaderNav";
+
+import './header.css';
+
 function Header ( { handleSearchNews, handleLogInPopup ,handleLogOut, handleHomeClick, handleSavedArticlesClick}) {
 
   const [keyword, setKeyword] = React.useState('');

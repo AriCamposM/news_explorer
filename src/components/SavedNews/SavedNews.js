@@ -1,7 +1,10 @@
 import React from "react";
-import SavedHeader from "./SavedHeader";
-import SavedCards from "./SavedCards";
-import Footer from "./Footer";
+import SavedHeader from "../SavedHeader/SavedHeader";
+import SavedCards from "../SavedCards/SavedCards";
+import Footer from "../Footer/Footer";
+
+import './savednews.css';
+
 function SavedNews ( { handleLogOut ,savedNews, handleUnSaveArticle, handleHomeClick, handleSavedArticlesClick }) {
 
   return(

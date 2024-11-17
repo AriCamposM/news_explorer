@@ -1,0 +1,4 @@
+## Test
+GET https://api.arinews.utdnews.com
+Content-Type: application/json
+

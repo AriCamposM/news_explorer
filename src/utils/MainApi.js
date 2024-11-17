@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'https://api.arinews.utdnews.com';
 
 export const register = ( password, email, name ) => {
     return fetch(`${BASE_URL}/signup`, {

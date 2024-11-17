@@ -1,5 +1,7 @@
 import React from "react";
-import CloseIcon from '../Images/login__close.png'
+import CloseIcon from '../../Images/login__close.png'
+
+import './signup.css';
 
 function Signup ({ handleSignUpPopup, handleRedirectPopups, handleSignUp }) {
 

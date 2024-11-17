@@ -1,7 +1,11 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
+
+import './savedcards.css';
+
 function SavedCards ({ savedNews, handleUnSaveArticle }) {
 
+  console.log(savedNews)
 
   return(
     <>
@@ -15,7 +19,7 @@ function SavedCards ({ savedNews, handleUnSaveArticle }) {
                 key={index}
                 source={article.source.name}
                 title={article.title}
-                publishedAt={article.publishedAt}
+                publishedAt={article.publishedAt || article.date}
                 description={article.description}
                 urlToImage={article.urlToImage}
                 url={article.url}

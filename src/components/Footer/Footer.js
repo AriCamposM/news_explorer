@@ -1,6 +1,8 @@
 import React from "react";
-import FacebookLogo from '../Images/footer__fb.png';
-import GithubLogo from '../Images/footer__github.png';
+import FacebookLogo from '../../Images/footer__fb.png';
+import GithubLogo from '../../Images/footer__github.png';
+
+import './footer.css';
 
 function Footer ({handleHomeClick}) {
 

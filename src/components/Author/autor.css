@@ -8,6 +8,14 @@
 .author__image{
     border-radius: 1000px;
     margin-right: 56px;
+    width: 464px;
+    height: 464px;
+}
+
+.author__image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .author__titles{
@@ -30,6 +38,7 @@
     font-size: 18px;
     line-height: 24px;
     width: 550px;
+    text-align: justify;
 }
 
 .author__paragrap-two{
@@ -40,6 +49,7 @@
   font-size: 18px;
   line-height: 24px;
   width: 550px;
+  text-align: justify;
 }
 
 .author__span{

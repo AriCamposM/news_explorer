@@ -1,8 +1,11 @@
 import React from "react";
-import MenuHeader from '../Images/header__menu.png';
-import { CurrentUserStateContext } from "../contexts/CurrentUserState";
-import {UsernameContext} from "../contexts/UsernameContext.js"
-import LogOutIcon from '../Images/header__logout.png';
+import MenuHeader from '../../Images/header__menu.png';
+import { CurrentUserStateContext } from "../../contexts/CurrentUserState.js";
+import {UsernameContext} from "../../contexts/UsernameContext.js"
+import LogOutIcon from '../../Images/header__logout.png';
+
+import './header.css';
+
 function HeaderNav ({ handleLogInPopup , handleLogOut , handleHomeClick, handleSavedArticlesClick}) {
   const CurrentUserState = React.useContext(CurrentUserStateContext);
   const Username = React.useContext(UsernameContext);

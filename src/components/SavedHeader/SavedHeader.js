@@ -1,8 +1,10 @@
 import React from "react";
-import MenuHeader from '../Images/savednewsheader__menu.png';
+import MenuHeader from '../../Images/savednewsheader__menu.png';
 
-import LogOutIcon from '../Images/header__logout-saved.png';
-import {UsernameContext} from "../contexts/UsernameContext.js"
+import LogOutIcon from '../../Images/header__logout-saved.png';
+import {UsernameContext} from "../../contexts/UsernameContext.js"
+
+import './savedheader.css';
 
 
 function SavedHeader ( { handleLogOut,
