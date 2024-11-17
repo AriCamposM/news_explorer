@@ -57,6 +57,12 @@
   display: none;
 }
 
+.footer_link{
+  text-decoration: none; 
+  color: inherit;       
+  border: none;          
+  outline: none;        
+}
 
 @media screen and (max-width:768px){
 
